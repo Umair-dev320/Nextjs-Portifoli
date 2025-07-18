@@ -18,7 +18,17 @@ const projects = [
     image: "/images/projects/MD-Notes-img.png",
     tech: ["Next.js", "Tailwind", "Fire Base"],
     github: "https://github.com/Umair-dev320/nestjs-15",
-    demo: "https://nestjs-15-4if08q935-muhammadumair160s-projects.vercel.app/",
+    demo: "https://nestjs-15-muhammadumair160s-projects.vercel.app/",
+  },
+  {
+    title: "QuickCart Website",
+    slug: "QuickCart-website",
+    description:
+      "QuickCart Website is a responsive full-stack e-commerce app built with Next.js, Tailwind CSS, and Framer Motion. It features NextAuth authentication, role-based dashboards, Cloudinary image uploads, and Inngest for background tasks. Sellers can manage products via an admin panel.",
+    image: "/images/projects/quick-card.png",
+    tech: ["Next.js", "Tailwind", "Mongoose", "Cloudinary", "Inngest", "Axios"],
+    github: "https://github.com/Umair-dev320/checkout-main",
+    demo: "https://letfix-zeta.vercel.app/",
   },
   {
     title: "Portfolio Website",
@@ -27,8 +37,8 @@ const projects = [
       "A modern and responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion. It showcases my skills in frontend and backend development, features smooth animations, a dark/light theme toggle, and highlights my projects, skills, and contact information.",
     image: "/images/projects/nextjs-profile-img.png",
     tech: ["Next.js", "Tailwind", "Framer Motion", "Fire Base"],
-    github: "https://github.com/your-username/portfolio",
-    demo: "https://umair-portfolio.vercel.app",
+    github: "https://github.com/Umair-dev320/Nextjs-Portifoli",
+    demo: "https://nextjs-portifoli.vercel.app/",
   },
 ];
 

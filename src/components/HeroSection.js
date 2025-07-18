@@ -5,14 +5,17 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-[90vh] flex flex-col md:flex-row items-center justify-center gap-12 px-6 py-10 sm:py-5 sm:pb-0 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-zinc-900 dark:to-zinc-800">
+    <section
+      className="min-h-[90vh] flex flex-col md:flex-row items-center justify-center gap-12 px-6 py-10 sm:py-5 sm:pb-0
+      bg-gradient-to-b from-white via-blue-100 to-blue-200 dark:from-gray-900 dark:via-indigo-500 dark:to-blue-500"
+    >
       {/* Left: Text */}
       <div className="w-full md:w-1/2 text-center md:text-left">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl sm:text-5xl font-extrabold text-gray-800 dark:text-white"
+          className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-blue-200"
         >
           Hi, I&#39;m Umair — Frontend Developer
         </motion.h1>
@@ -21,7 +24,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.7 }}
-          className="mt-4 text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl"
+          className="mt-4 text-lg sm:text-xl text-gray-800 dark:text-blue-200 max-w-xl"
         >
           I build modern UIs with React, Tailwind, Bootstrap, Material UI, and
           connect them with Node.js, Express, MongoDB & Firebase.
@@ -35,20 +38,22 @@ export default function HeroSection() {
         >
           <Link
             href="/projects"
-            className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition"
+            className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 dark:bg-indigo-700 dark:hover:bg-indigo-600 transition"
           >
             View Projects
           </Link>
           <Link
             href="/contact"
-            className="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 dark:hover:bg-zinc-700 transition"
+            className="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-200 
+            dark:border-blue-400 dark:text-blue-200 dark:hover:bg-indigo-600 dark:hover:text-white transition"
           >
             Contact Me
           </Link>
           <a
             href="/images/Linkedin.pdf"
             download="Umair-Resume.pdf"
-            className="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 dark:hover:bg-zinc-700 transition"
+            className="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-200 
+            dark:border-blue-400 dark:text-blue-200 dark:hover:bg-indigo-600 dark:hover:text-white transition"
           >
             Download Resume
           </a>

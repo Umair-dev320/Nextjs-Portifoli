@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "http://localhost:3000", // Change to your production domain later
+  siteUrl: "https://nextjs-portifoli.vercel.app",
   generateRobotsTxt: true,
 };

@@ -4,8 +4,8 @@ import AboutPreview from "@/components/AboutPreview";
 import SkillsGrid from "@/components/SkillsGrid";
 import ProjectsPreview from "@/components/ProjectsPreview";
 
-// SEO metadata for this page
 export const metadata = {
+  metadataBase: new URL("https://nextjs-portifoli.vercel.app"), // ✅ Add this line
   title: "Umair | Frontend Developer Portfolio",
   description:
     "Explore Umair’s professional frontend developer portfolio showcasing projects in React.js, Tailwind CSS, Firebase, Node.js, and more.",
@@ -15,11 +15,11 @@ export const metadata = {
     title: "Umair | Frontend Developer",
     description:
       "Modern web apps and UI projects using React, Tailwind, Firebase, and Express.",
-    url: "https://your-portfolio-domain.com",
+    url: "https://nextjs-portifoli.vercel.app/",
     siteName: "Umair Portfolio",
     images: [
       {
-        url: "/images/preview.png",
+        url: "/images/projects/nextjs-profile-img.png",
         width: 1200,
         height: 630,
         alt: "Umair Portfolio Screenshot",
@@ -32,7 +32,7 @@ export const metadata = {
     title: "Umair | Frontend Developer Portfolio",
     description:
       "Full-stack web projects built with React, Firebase, and Node.js.",
-    images: ["/images/preview.png"],
+    images: ["/images/projects/nextjs-profile-img.png"],
   },
 };
 
