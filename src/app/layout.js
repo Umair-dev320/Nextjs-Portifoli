@@ -1,9 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "../app/globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ScrollProgress from "@/components/ScrollProgress";
-import { ThemeProvider } from "next-themes";
+import "./globals.css";
+import Providers from "@/components/Providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,12 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://nextjs-portifoli.vercel.app"),
   title: {
     default: "Umair Portfolio",
     template: "%s | Umair",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/icons/download.png",
   },
 };
 
@@ -30,14 +28,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        cz-shortcut-listen="true"
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ScrollProgress />
-          <Header />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-        </ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
