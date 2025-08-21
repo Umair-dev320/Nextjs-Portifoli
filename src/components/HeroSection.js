@@ -6,8 +6,10 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section
-      className="min-h-[90vh] flex flex-col md:flex-row items-center justify-center gap-12 px-6 py-10 sm:py-5 sm:pb-0
-      bg-gradient-to-b from-white via-blue-100 to-blue-200 dark:from-gray-900 dark:via-indigo-500 dark:to-blue-500"
+      className="min-h-[90vh] flex flex-col md:flex-row items-center justify-center gap-12 px-6 py-10 sm:py-5 sm:pb-0 
+             bg-gradient-to-b from-white via-blue-100 to-blue-200 
+             dark:bg-[conic-gradient((at_top_left,_var(--tw-gradient-stops))] 
+             dark:from-[#52525b] dark:via-[#a1a1aa] dark:to-[[#e4e4e7]"
     >
       {/* Left: Text */}
       <div className="w-full md:w-1/2 text-center md:text-left">

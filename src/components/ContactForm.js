@@ -86,8 +86,8 @@ export default function ContactForm() {
           className="p-10 space-y-4 bg-white dark:bg-zinc-900"
         >
           {submitted && (
-            <p className="text-green-600 text-center dark:text-green-400">
-              ✅ Your message has been sent successfully!
+            <p className=" text-center  text-zinc-800 dark:text-gray-200">
+              🤍Thank you for contacting us — we’ll get back to you shortly!
             </p>
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
