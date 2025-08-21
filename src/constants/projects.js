@@ -4,7 +4,7 @@ const projects = [
     slug: "Khub-biz",
     description:
       "Collaborated on the Khub.biz website redesign by implementing two new pages and refreshing three others based on Figma prototypes. Focused on clean, responsive design using HTML, CSS, and JavaScript.",
-    image: "/images/projects/Khub.png",
+    image: "/images/projects/Khub-1.png",
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Umair-dev320",
     demo: "https://khub.biz/",
