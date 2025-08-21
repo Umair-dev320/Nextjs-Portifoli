@@ -8,7 +8,7 @@ export default function ProjectsPreview() {
       title: "Khub.biz website",
       description:
         "Redesigned and developed pages for Khub.biz using Figma prototypes, focusing on clean, responsive layouts with HTML, CSS, and JavaScript.",
-      image: "/images/projects/Khub.png",
+      image: "/images/projects/Khub-1.png",
       link: "https://khub.biz/",
     },
     {
