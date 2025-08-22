@@ -50,14 +50,14 @@ const projects = [
     demo: "https://letfix-zeta.vercel.app/",
   },
   {
-    title: "Portfolio Website",
-    slug: "portfolio-website",
+    title: "Pig Game",
+    slug: "Pig-Game Website",
     description:
-      "A modern and responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion. It showcases my skills in frontend and backend development, features smooth animations, a dark/light theme toggle, and highlights my projects, skills, and contact information.",
-    image: "/images/projects/nextjs-profile-img.png",
-    tech: ["Next.js", "Tailwind", "Framer Motion", "Fire Base"],
-    github: "https://github.com/Umair-dev320/Nextjs-Portifoli",
-    demo: "https://nextjs-portifoli.vercel.app/",
+      "A lightweight browser game where two players take turns rolling a die; hitting the losing number (e.g., 1) ends the turn or the game based on selected rules. Players can hold points, and scores update live with clear turn indicators and a quick reset for replayability.",
+    image: "/images/projects/pig-game.png",
+    tech: ["HTML", "CSS", "Javascript"],
+    github: "https://github.com/Umair-dev320/Pig-Game",
+    demo: "https://pig-game-five-roan.vercel.app",
   },
 ];
 
