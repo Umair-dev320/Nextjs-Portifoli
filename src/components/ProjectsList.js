@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function ProjectsList() {
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto">
+    <section className="pt-3 pb-15 px-4 max-w-6xl mx-auto">
       <motion.h2
         className="text-3xl font-bold mb-8 text-center"
         initial={{ opacity: 0, y: 20 }}

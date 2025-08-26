@@ -18,28 +18,31 @@ import {
 
 export default function SkillsGrid() {
   const skills = [
-    { name: "HTML", icon: <SiHtml5 className="text-orange-500 mx-17" /> },
-    { name: "CSS", icon: <SiCss3 className="text-blue-500 mx-17" /> },
+    { name: "HTML", icon: <SiHtml5 className="text-orange-500 mx-auto" /> },
+    { name: "CSS", icon: <SiCss3 className="text-blue-500 mx-auto" /> },
     {
       name: "JavaScript",
-      icon: <SiJavascript className="text-yellow-400 mx-17" />,
+      icon: <SiJavascript className="text-yellow-400 mx-auto" />,
     },
-    { name: "React", icon: <SiReact className="text-cyan-400 mx-17" /> },
+    { name: "React", icon: <SiReact className="text-cyan-400 mx-auto" /> },
     {
       name: "Tailwind",
-      icon: <SiTailwindcss className="text-sky-400 mx-17" />,
+      icon: <SiTailwindcss className="text-sky-400 mx-auto" />,
     },
     {
       name: "Bootstrap",
-      icon: <SiBootstrap className="text-purple-600 mx-17" />,
+      icon: <SiBootstrap className="text-purple-600 mx-auto" />,
     },
-    { name: "MUI", icon: <SiMui className="text-blue-600 mx-17" /> },
-    { name: "Node.js", icon: <SiNodedotjs className="text-green-600 mx-17" /> },
-    { name: "Express", icon: <SiExpress className="text-gray-400 mx-17" /> },
-    { name: "MongoDB", icon: <SiMongodb className="text-green-500 mx-17" /> },
+    { name: "MUI", icon: <SiMui className="text-blue-600 mx-auto" /> },
+    {
+      name: "Node.js",
+      icon: <SiNodedotjs className="text-green-600 mx-auto" />,
+    },
+    { name: "Express", icon: <SiExpress className="text-gray-400 mx-auto" /> },
+    { name: "MongoDB", icon: <SiMongodb className="text-green-500 mx-auto" /> },
     {
       name: "Firebase",
-      icon: <SiFirebase className="text-yellow-500 mx-17" />,
+      icon: <SiFirebase className="text-yellow-500 mx-auto" />,
     },
     {
       name: "NestJS",
@@ -74,7 +77,7 @@ export default function SkillsGrid() {
               }}
               className="py-4 sm:py-6 px-2 sm:px-4 bg-white dark:bg-zinc-700 rounded-lg shadow hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
-              <div className="text-2xl sm:text-3xl mb-2 flex justify-center items-center">
+              <div className="text-xl sm:text-2xl md:text-3xl mb-2 flex justify-center items-center">
                 {skill.icon}
               </div>
               <div className="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-100">

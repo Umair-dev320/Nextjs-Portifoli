@@ -57,23 +57,29 @@ export default function ContactForm() {
           </p>
 
           <ul className="space-y-4 text-gray-700 dark:text-gray-300">
-            <li className="flex items-start gap-2 transition-colors hover:text-blue-600">
-              <FiMapPin className="mt-1 text-blue-500" />
+            <li className="flex items-center gap-3 flex-wrap transition-colors hover:text-blue-600">
+              <FiMapPin className="text-blue-500 text-lg flex-shrink-0" />
               <a
                 href="https://www.google.com/maps?q=Lahore,+Pakistan"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="break-all"
               >
                 Lahore, Pakistan
               </a>
             </li>
-            <li className="flex items-center gap-2 transition-colors hover:text-blue-600">
-              <FiPhone className="text-blue-500" />
-              <a href="tel:+923241460271">+92 (324) 146-0271</a>
+            <li className="flex items-center gap-3 flex-wrap transition-colors hover:text-blue-600">
+              <FiPhone className="text-blue-500 text-lg flex-shrink-0" />
+              <a href="tel:+923241460271" className="break-all">
+                +92 (324) 146-0271
+              </a>
             </li>
-            <li className="flex items-center gap-2 transition-colors hover:text-blue-600">
-              <FiMail className="text-blue-500" />
-              <a href="mailto:umairmanzoor320@gmail.com">
+            <li className="flex items-center gap-3 min-w-0 transition-colors hover:text-blue-600">
+              <FiMail className="text-blue-500 text-lg flex-shrink-0" />
+              <a
+                href="mailto:umairmanzoor320@gmail.com"
+                className="flex-1 break-words truncate text-sm sm:text-base"
+              >
                 umairmanzoor320@gmail.com
               </a>
             </li>
