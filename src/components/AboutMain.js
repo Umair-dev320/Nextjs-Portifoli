@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function AboutMain() {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-10 sm:py-5 sm:pb-10">
+    <section className="max-w-6xl mx-auto px-4 pt-5 pb-10 sm:py-5 sm:pb-10">
       <div className="flex flex-col md:flex-row items-start gap-10">
         {/* Profile Image */}
         <motion.div

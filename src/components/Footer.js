@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaArrowUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaArrowUp, FaArrowDown } from "react-icons/fa";
 import { MdDownloadForOffline } from "react-icons/md";
 
 import { useState, useEffect } from "react";
@@ -10,15 +10,21 @@ export default function Footer() {
   const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolling(window.scrollY > 200);
+    const handleScroll = () => {
+      // If user scrolled more than 100px from top
+      setIsScrolling(window.scrollY > 100);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
-    if (typeof window !== "undefined") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
   return (
@@ -27,14 +33,14 @@ export default function Footer() {
         {/* Left Section: Logo and Text */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-xs">
           <Image
-            src="/images/projects/Umair-Dev.png"
+            src="/images/logo img.png"
             alt="Umair Logo"
-            className="h-14 sm:h-14 w-auto object-contain mb-3"
+            className="h-7 sm:h-8 w-auto object-contain mb-3"
             priority
             width={120}
             height={50}
           />
-          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed ">
             Crafting <span className="font-semibold">clean code</span> and
             <span className="font-semibold"> thoughtful design</span> for every
             project I build.
@@ -73,15 +79,19 @@ export default function Footer() {
         {/* Right Section: Back to top button */}
         <div>
           <button
-            onClick={scrollToTop}
-            aria-label="Back to top"
-            className={`flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 shadow-sm ${
-              isScrolling
-                ? "bg-blue-600 text-white animate-pulse shadow-lg"
-                : "bg-gray-200 text-gray-600"
-            } hover:scale-110 hover:bg-blue-700 hover:text-white`}
+            onClick={isScrolling ? scrollToTop : scrollToBottom}
+            aria-label={isScrolling ? "Back to top" : "Scroll to bottom"}
+            className={`fixed bottom-4 right-4 flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 shadow-sm z-50
+          ${
+            isScrolling
+              ? "bg-blue-600 text-white animate-pulse shadow-lg"
+              : "bg-gray-200 text-gray-600"
+          }
+          hover:scale-110 hover:bg-blue-700 hover:text-white
+          md:bottom-6 md:right-6
+        `}
           >
-            <FaArrowUp size={16} />
+            {isScrolling ? <FaArrowUp size={16} /> : <FaArrowDown size={16} />}
           </button>
         </div>
       </div>
